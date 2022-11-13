@@ -39,10 +39,13 @@ class MainActivity : ComponentActivity() {
 //                ) {
 //                    CountryItem()
 //                }
-                Column() {
-                    SearchListItem()
-                    CountryItem()
-                }
+//                Column() {
+//                    SearchListItem()
+//                    CountryItem()
+
+//                }
+                MyAppBar()
+
             }
         }
     }
