@@ -4,5 +4,5 @@ Upon clicking on a country, more details about that country will be displayed on
 
 The app allows navigation between two screens.
 
-Link to the app on appetize
+Link to the application on appetize
 https://appetize.io/app/oqwrqzrofzodrlyln5zfevpvzi?device=pixel4&osVersion=11.0&scale=75
