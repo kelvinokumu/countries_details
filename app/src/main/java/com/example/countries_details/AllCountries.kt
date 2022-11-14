@@ -1,11 +1,11 @@
 package com.example.countries_details
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.LazyListScope
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Place
@@ -33,16 +33,20 @@ private fun CountryIcon(
 fun myList(){
     LazyColumn(){
         items(30){
-            countryItem()
+            CountryItem()
         }
     }
 }
 
 @Composable
-fun countryItem() {
+fun CountryItem() {
     Card(
         elevation = 4.dp,
-        modifier = Modifier.padding(8.dp)
+        modifier = Modifier
+            .padding(8.dp)
+            .clickable {
+                onItemClick()
+            }
     ) {
         Row(
             verticalAlignment =
@@ -56,6 +60,10 @@ fun countryItem() {
             CountryDetails(Modifier.weight(0.85f))
         }
     }
+}
+
+fun onItemClick() {
+    TODO("Not yet implemented")
 }
 
 @Composable
